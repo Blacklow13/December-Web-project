@@ -4,14 +4,32 @@
 #mainList{
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
 }
 
 .emoji{
-    width: 100px;
-    height: 80px;
+    width: 35px;
+    height: 25px;
+    align-self: center;
 }
 
 .countryCard{
     display: flex;
     flex-direction: column;
+    background-color: rgb(169, 245, 169);
+    color:rgb(59, 3, 81);
+    height: 20%;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.countryTitle{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    background-color: rgb(141, 144, 189);
 }
