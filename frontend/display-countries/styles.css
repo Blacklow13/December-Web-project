@@ -1,0 +1,17 @@
+.countryInList{
+}
+
+#mainList{
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji{
+    width: 100px;
+    height: 80px;
+}
+
+.countryCard{
+    display: flex;
+    flex-direction: column;
+}
