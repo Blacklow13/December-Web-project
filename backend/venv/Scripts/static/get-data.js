@@ -1,5 +1,5 @@
 export async function getCountriesList(){
-    return await fetch('/frontend/display-countries/countries.json')
+    return await fetch('/static/countries.json')
         .then(response => {
             if (!response.ok) {
             throw new Error('Network response was not ok');

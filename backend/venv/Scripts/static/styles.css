@@ -1,6 +1,12 @@
 .countryInList{
 }
 
+#title{
+    display: flex;
+    color: rgb(59, 3, 81);
+    justify-self: center;
+}
+
 #mainList{
     display: flex;
     flex-direction: column;

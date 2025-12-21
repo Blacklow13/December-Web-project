@@ -1,4 +1,4 @@
-import { getCountriesList} from "/frontend/display-countries/get-data.js";
+import { getCountriesList} from "/static/get-data.js";
 
 const countries =  await getCountriesList()
 
