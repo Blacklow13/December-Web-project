@@ -11,4 +11,7 @@ export async function getCountriesList(){
         });
 }
 
+export const countries =  await getCountriesList()
+
+
 

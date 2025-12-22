@@ -1,17 +1,18 @@
 .countryInList{
 }
 
-#title{
+.title{
     display: flex;
-    color: rgb(59, 3, 81);
-    justify-self: center;
+    color:aliceblue;
+    background-color: rgb(0, 108, 43);;
+    justify-content: center;
+    width: 100%;
 }
 
 #mainList{
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-around;
+    flex-grow: 1;
+    overflow: scroll;
 }
 
 .emoji{
@@ -22,11 +23,17 @@
 
 .countryCard{
     display: flex;
+    flex: none;
+    justify-content: space-around;
     flex-direction: column;
-    background-color: rgb(169, 245, 169);
-    color:rgb(59, 3, 81);
-    height: 20%;
-    margin: 20px;
+    background-color: rgba(130, 215, 88, 0.745);
+    align-items: center;
+    font-size: 1.3em;
+    color:rgb(0, 108, 43);
+    margin: 30px;
+    width: 20.5%;
+    height: 40vh;
+    
     border-radius: 8px;
     padding: 10px;
 }
@@ -37,5 +44,65 @@
 }
 
 body{
-    background-color: rgb(141, 144, 189);
+    font-family: "Inter", sans-serif;;
+
 }
+
+footer{
+    display: flex;
+    color:aliceblue;
+    background-color: rgb(0, 108, 43);;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+#filtersAndSearch{
+    color:rgb(0, 108, 43);
+    display: flex;
+    font-size: 0.7em;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.buttons{
+   background-color: rgb(0, 108, 43);
+   border-radius: 7px;
+   min-width: 8em ;
+   min-height: 1.2em;
+   font-size: 1.1em;
+   margin: 3px;
+   color: rgb(255, 255, 255);
+}
+
+#filterByArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#filterByRegion{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#searchByCountryName{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: stretch;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');

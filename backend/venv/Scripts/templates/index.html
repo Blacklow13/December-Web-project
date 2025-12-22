@@ -2,12 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>display-countries</title>
   </head>
   <body>
-  <h1>ddd</h1>
+    <script type="module" src="/static/search-and-filters.js"></script>
+    <div class="title"><h1>INFORMATION ABOUT COUNTRIES AROUND THE WORLD</h1></div>
+    <div id="filtersAndSearch">
+      <div id="searchByCountryName" style="padding: 20px;">
+        <h1>Search country by name</h1>
+        <input type="text" id="searchByName" placeholder="enter name in any language">
+        <button id="searchByNameButton" class="buttons">find</button>
+        <button id="showAllCards" class="buttons">showAllCards</button>
+      </div>
+      <div id="filters">
+        <div id="filterByRegion">
+          <h1>Filter by region</h1>
+          <select name="regions" id="selectfilterByRegion" class="buttons">
+            <option value="" disabled style="color: rgb(158, 192, 165);">--Select a region--</option>
+            <option value="All">All</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Africa">Africa</option>
+
+          </select>
+          <button id="filterByRegionButton" class="buttons">filter</button>
+        </div>
+        <div>
+          <div id="filterByArea">
+            <h1>Filter by area</h1>
+            <input type="text" id="filterByAreaMin" placeholder="min area">
+            <input type="text" id="filterByAreaMax" placeholder="max area">
+            <button id="filterByAreaButton" class="buttons">filter</button>
+            <button id="showAllCards1" class="buttons">showAllCards</button>
+          </div>
+        </div>
+        
+      </div>
+      
+
+    </div>
+    <script  type="module" src="/static/show-countries-list.js"></script>
+    <div id="mainList"></div>
+    <footer>
+      <h3>WEBSITE WAS CREATED BY BLACKLOW</h3>
+    </footer >
 
   </body>
 </html>
