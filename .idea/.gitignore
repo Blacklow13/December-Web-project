@@ -2,6 +2,6 @@
 /shelf/
 /workspace.xml
 other_scripts
-Lib/site-packages
+backend/venv/Lib/site-packages
 
 
